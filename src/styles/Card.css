@@ -1,0 +1,52 @@
+/* body {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 250%;
+  } */
+  .wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /* top: 20%; */
+    /* background-color: #D1D5D8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    top: 115%;
+    position: absolute ; 
+    height: 30%;
+    width: 35%;
+    font-size: smaller;
+    border-radius: 10px;
+    border: 0;
+  }
+  .card {
+    width: 550px;
+    height: 350px;
+    position: relative;
+    perspective: 1000px;
+  }
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  .front {
+    background-color: #F1C40F;
+  }
+  .back {
+    background-color: #3498DB;
+    transform: rotateY(180deg);
+  }
+  .card:hover .front {transform: rotateY(180deg);}
+  .card:hover .back {transform: rotateY(360deg);}
